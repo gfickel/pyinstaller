@@ -1,0 +1,4 @@
+Fix multipackaging
+
+- Correct relative paths between shared dependencies
+- Fix issue when copying dependency files in the bootloader.
