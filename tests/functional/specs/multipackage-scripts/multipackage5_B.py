@@ -9,8 +9,8 @@
 
 
 # import a very simple and rarely used pure-python lib ...
-import getopt
+import getopt  # noqa: F401
 # ... and a module importing a shared lib
-import ssl
+import ssl  # noqa: F401
 
 print('Hello World!')

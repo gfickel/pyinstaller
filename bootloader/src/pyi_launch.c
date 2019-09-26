@@ -163,6 +163,14 @@ _get_archive(ARCHIVE_STATUS *archive_pool[], const char *path)
      */
     archive->has_temp_directory = archive_pool[SELF]->has_temp_directory;
 
+    /*
+     * NULL the fp pointer as malloc does not initialise values
+     * which can result in a non-NULL value and will result in
+     * the archive not being opened and bogus data remaining
+     * in archive->fp
+     */
+    archive->fp = NULL;
+
     if (pyi_arch_open(archive)) {
         FATAL_PERROR("malloc", "Error opening archive %s\n", path);
         free(archive);

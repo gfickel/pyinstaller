@@ -581,3 +581,23 @@ def test_several_scripts2(pyi_builder_spec):
     Verify each script has it's own global vars (basic test).
     """
     pyi_builder_spec.test_spec('several-scripts2.spec')
+
+
+def test_spec_with_multipackage1(pyi_builder_spec):
+    pyi_builder_spec.test_spec('test_multipackage1.spec')
+
+
+def test_spec_with_multipackage2(pyi_builder_spec):
+    pyi_builder_spec.test_spec('test_multipackage2.spec')
+
+
+def test_spec_with_multipackage3(pyi_builder_spec):
+    pyi_builder_spec.test_spec('test_multipackage3.spec')
+
+
+def test_spec_with_multipackage4(pyi_builder_spec):
+    pyi_builder_spec.test_spec('test_multipackage4.spec')
+
+
+def test_spec_with_multipackage5(pyi_builder_spec):
+    pyi_builder_spec.test_spec('test_multipackage5.spec')
